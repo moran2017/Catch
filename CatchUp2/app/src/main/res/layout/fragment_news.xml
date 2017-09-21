@@ -4,10 +4,61 @@
     android:layout_height="match_parent"
     tools:context="pe.edu.upc.catchup.fragment.newsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="133dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/name_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/description_TextView"
+                android:layout_alignStart="@+id/description_TextView"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="29dp"
+                android:text="NAME" />
+
+            <TextView
+                android:id="@+id/description_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_view"
+                android:layout_centerHorizontal="true"
+                android:text="Sample Description" />
+
+            <TextView
+                android:id="@+id/about_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/image_view"
+                android:text="About" />
+
+            <TextView
+                android:id="@+id/news_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="11dp"
+                android:text="News"
+                android:layout_alignBottom="@+id/about_TextView" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
 
 </FrameLayout>
